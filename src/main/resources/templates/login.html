@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to your website!</title>
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["username"].value;
+        if (x == "3180196") {
+          alert("Success! :) ");
+          return true;
+        }else{
+          alert("Failed! :( ");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body style="background-color:#A78BED;padding:15%; margin:0% 20%;">
+    <form name="myForm" onsubmit="return validateForm()" method="GET" style="background-color:#C492EF;border-style:double;text-align:center;padding:3%">
+      <label for="username">Username:</label>
+      <input placeholder="Enter Username" type="text" name="username"><br>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter Password" name ="password"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
